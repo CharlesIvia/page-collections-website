@@ -1,4 +1,6 @@
-import "./App.css";
+//Required imports
+import "./css/Normalize.css";
+import "./css/App.css";
 
 function App() {
   return (
