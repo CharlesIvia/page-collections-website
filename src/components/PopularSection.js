@@ -1,12 +1,13 @@
 //Required imports
 import React from "react";
+import { Link } from "react-router-dom";
 import { Books } from "../data/BooksData";
 
 //Book card
 
 export const BookCard = ({ book }) => {
   return (
-    <div className="bookcard">
+    <Link className="bookcard" to={book.booklink}>
       <div>
         <img src={book.src} alt={book.name} />
       </div>
@@ -15,7 +16,7 @@ export const BookCard = ({ book }) => {
         <p>{book.author}</p>
         <p>{`KSH ${book.price}`}</p>
       </div>
-    </div>
+    </Link>
   );
 };
 

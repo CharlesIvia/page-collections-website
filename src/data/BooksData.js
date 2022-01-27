@@ -16,9 +16,12 @@ import ShouldIImg from "../assets/books/should-i.jpeg";
 
 export const Books = [
   {
-    name: "The Promised Land",
+    name: "A Promised Land",
     author: "Barack Obama",
     category: "biography",
+    booklink: "/promised-land",
+    description:
+      "A riveting, deeply personal account of history in the making—from the president who inspired us to believe in the power of democracy. In the stirring, highly anticipated first volume of his presidential memoirs, Barack Obama tells the story of his improbable odyssey from young man searching for his identity to leader of the free world, describing in strikingly personal detail both his political education and the landmark moments of the first term of his historic presidency—a time of dramatic transformation and turmoil. Obama takes readers on a compelling journey from his earliest political aspirations to the pivotal Iowa caucus victory that demonstrated the power of grassroots activism to the watershed night of November 4, 2008, when he was elected 44th president of the United States, becoming the first African American to hold the nation’s highest office.",
     src: PromisedLandImg,
     popular: true,
     price: 1000,
@@ -28,6 +31,9 @@ export const Books = [
     name: "Drunk",
     author: "Jackson Biko",
     category: "novels",
+    booklink: "/drunk",
+    description:
+      "It starts with a girl. Girls actually. Its only fair that it starts with a girl, no? Only problem is that most stories that start with a girl always end up with someone banging on the door saying; I just want to talk. This is not one of those stories. This one is about Larry. Mad Larry. He drinks. He shags girls. He hates his father. And he looks nothing like his step brother, who stays by his side throughout his madness. When Larry does something terrible, it looms over him, shaping his future, transforming all the relationships around him and hurtling him into a rabbit hole. Oh, and wheelbarrows are involved. Five of them. Somehow Larry and one of these wheelbarrows will collide and things will get pretty hairy - for Larry, that is, not for you, dear reader.",
     src: DrunkImg,
     popular: true,
     price: 1000,

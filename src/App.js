@@ -12,6 +12,9 @@ import { NonFiction } from "./components/NonFiction";
 import { Novels } from "./components/Novels";
 import { Biographies } from "./components/Biographies";
 import { Textbooks } from "./components/Textbooks";
+import { PromisedLand } from "./components/PromisedLand";
+import { Drunk } from "./components/booklinks/Drunk";
+import { Login } from "./components/Login";
 
 //Handling routing
 function App() {
@@ -32,6 +35,9 @@ function App() {
             <Route exact path="/register">
               <Register />
             </Route>
+            <Route exact path="/login">
+              <Login />
+            </Route>
             <Route exact path="/personal-growth">
               <PersonalGrowth />
             </Route>
@@ -49,6 +55,12 @@ function App() {
             </Route>
             <Route exact path="/textbooks">
               <Textbooks />
+            </Route>
+            <Route exact path="/promised-land">
+              <PromisedLand />
+            </Route>
+            <Route exact path="/drunk">
+              <Drunk />
             </Route>
           </Switch>
         </div>
