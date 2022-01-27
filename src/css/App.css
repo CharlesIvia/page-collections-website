@@ -1,3 +1,205 @@
-.App {
+/*Initial styling*/
+@import url("https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Oxygen:wght@300;400;700&display=swap");
+*,
+body {
+  font-family: "Oxygen", sans-serif;
+  font-family: "Oxygen Mono", monospace;
+  font-size: 10px;
+}
+
+/*Header styling*/
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2vh 15vw;
+  background-color: #f5f5ef;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-links a {
+  font-size: 1.6rem;
+  padding-left: 4vw;
+  text-decoration: none;
+  color: #3e3734;
+}
+.nav-links a button {
+  padding: 0.8rem 2rem;
+  border-radius: 2.2rem;
+  border: 1px solid #3e3734;
+  font-size: 1.6rem;
+}
+
+/*Hero search styling*/
+.hero-search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5vh 15vw;
+  background-color: #c7ddd1;
+}
+.hero-search-right img {
+  height: 25rem;
+  width: 33.25rem;
+}
+
+.hero-search-left div h2 {
+  font-size: 4.7rem;
+  color: #424f5a;
+  max-width: 45vw;
+}
+
+.hero-search-left div form input {
+  padding: 0.8rem;
+  border-radius: 1.8rem;
+  width: 25vw;
+  margin-right: 1rem;
+  font-size: 1.6rem;
+  border: none;
+}
+
+.hero-search-left div form button {
+  padding: 0.8rem 2rem;
+  border-radius: 2.2rem;
+  border: 2px solid #424f5a;
+  font-size: 1.6rem;
+  border: none;
+  background-color: #364250;
+  color: #babec4;
+}
+
+/*Categories section*/
+.categories-section {
+  background-color: #f5f5ef;
+}
+.categories {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 4vh 15vw;
+  background-color: #f5f5ef;
+}
+.category-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  width: 17rem;
+  height: 17rem;
+  border-radius: 0.7rem;
+  background-color: white;
+  margin-bottom: 2vh;
+}
+
+.category-card div p {
+  font-size: 1.6rem;
+}
+
+.categories-section div h3 {
+  margin: 0;
+  padding: 4vh 15vw;
+  font-size: 1.8rem;
+  color: #424f5a;
+}
+
+/*popular*/
+
+.popular-section {
+  background-color: #f5f5ef;
+}
+
+.popular-section-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 4vh 15vw;
+  background-color: #f5f5ef;
+}
+
+.bookcard {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  background-color: white;
+  border-radius: 0rem 0rem 0.7rem 0.7rem;
+  margin-bottom: 2vh;
+  max-width: 17rem;
+}
+
+.bookcard div img {
+  width: 17rem;
+  height: 25rem;
+  border-radius: 0.7rem 0.7rem 0rem 0rem;
+}
+
+.bookcard-details {
+  padding-left: 0.5rem;
+}
+
+.bookcard-details h3 {
+  font-size: 1.2rem;
+}
+
+.popular-section-h3 {
+  margin: 0;
+  padding: 4vh 15vw;
+  font-size: 1.8rem;
+  color: #424f5a;
+}
+
+/*Footer styling*/
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2vh 15vw;
+  background-color: #c7ddd1;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 15rem;
+  font-size: 3rem;
+  padding: 2vh 0;
+}
+
+.footer-links,
+.footer-terms {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 20rem;
+  padding: 1vh 0;
   text-align: center;
+}
+
+.footer-terms {
+  justify-content: space-between;
+}
+.footer-links a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #3e3734;
+}
+
+.footer-copy p {
+  font-size: 1.2rem;
 }
