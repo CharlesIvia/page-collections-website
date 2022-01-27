@@ -14,8 +14,7 @@ export const Header = () => {
       </div>
       <div className="nav-links">
         <Link to="about">About</Link>
-        <Link to="contact">Contact</Link>
-        <Link to="shopping">
+        <Link to="shopping-cart">
           <HiOutlineShoppingBag size={32} />
         </Link>
         <Link to="register">

@@ -1,12 +1,11 @@
 import React from "react";
-import EndlessReadingGif from "../assets/bookshelf_.png";
 
-export const HeroSearch = () => {
+export const HeroSearch = ({ searchmain, searchimage }) => {
   return (
     <div className="hero-search">
       <div className="hero-search-left">
         <div>
-          <h2>Once you learn to read, you will be forever free.</h2>
+          <h2>{searchmain}</h2>
         </div>
         <div>
           <form>
@@ -19,7 +18,7 @@ export const HeroSearch = () => {
         </div>
       </div>
       <div className="hero-search-right">
-        <img src={EndlessReadingGif} alt="endless reading"></img>
+        <img src={searchimage} alt="endless reading"></img>
       </div>
     </div>
   );

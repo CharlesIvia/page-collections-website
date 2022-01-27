@@ -1,19 +1,20 @@
 //Required imports
 import React from "react";
 import { categoriesData } from "../data/categtoriesData";
+import { Link } from "react-router-dom";
 
 //Categories card
 
 export const CategoryCard = ({ category }) => {
   return (
-    <div className="category-card">
+    <Link className="category-card" to={category.link}>
       <div>
         <p> {<category.src size={60} color="#424f5a" />}</p>
       </div>
       <div>
         <p>{category.name}</p>
       </div>
-    </div>
+    </Link>
   );
 };
 export const Categories = () => {
