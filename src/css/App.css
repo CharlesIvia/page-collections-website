@@ -51,9 +51,10 @@ body {
 }
 
 .hero-search-left div h2 {
-  font-size: 4.7rem;
+  font-size: 3.7rem;
   color: #424f5a;
   max-width: 45vw;
+  line-height: 4.7rem;
 }
 
 .hero-search-left div form input {
@@ -99,6 +100,8 @@ body {
   border-radius: 0.7rem;
   background-color: white;
   margin-bottom: 2vh;
+  text-decoration: none;
+  color: #3e3734;
 }
 
 .category-card div p {
@@ -135,11 +138,12 @@ body {
   background-color: white;
   border-radius: 0rem 0rem 0.7rem 0.7rem;
   margin-bottom: 2vh;
-  max-width: 17rem;
+  max-width: 19rem;
+  margin-right: 2vw;
 }
 
 .bookcard div img {
-  width: 17rem;
+  width: 19rem;
   height: 25rem;
   border-radius: 0.7rem 0.7rem 0rem 0rem;
 }
