@@ -7,6 +7,7 @@ import {
   signInWithEmailAndPassword,
   sendPasswordResetEmail,
   signOut,
+  onAuthStateChanged,
 } from "firebase/auth";
 
 import {
@@ -108,4 +109,5 @@ export {
   registerWithEmailAndPassword,
   sendPasswordReset,
   logout,
+  onAuthStateChanged,
 };

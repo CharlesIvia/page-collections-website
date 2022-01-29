@@ -14,10 +14,9 @@ export const Login = () => {
 
   useEffect(() => {
     if (loading) {
-      // maybe trigger a loading screen
-      //   if (user) history.replace("/");
     }
-  }, [user, loading]);
+    if (user) history.replace("/home-dashboard");
+  }, [user, loading, history]);
 
   return (
     <div>

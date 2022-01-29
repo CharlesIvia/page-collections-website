@@ -26,7 +26,7 @@ export const Register = () => {
 
   useEffect(() => {
     if (loading) return;
-    // if (user) history.replace("/");
+    if (user) history.replace("/login");
   }, [user, loading]);
 
   return (

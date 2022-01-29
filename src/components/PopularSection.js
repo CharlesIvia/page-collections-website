@@ -7,7 +7,7 @@ import { Books } from "../data/BooksData";
 
 export const BookCard = ({ book }) => {
   return (
-    <Link className="bookcard" to={book.booklink}>
+    <Link className="bookcard" to={`/book/${book.id}`}>
       <div>
         <img src={book.src} alt={book.name} />
       </div>

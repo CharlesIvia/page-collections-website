@@ -35,6 +35,12 @@ body {
   border: 1px solid #3e3734;
   font-size: 1.6rem;
 }
+.nav-links p {
+  font-size: 1.6rem;
+  padding-left: 4vw;
+  text-decoration: none;
+  color: #3e3734;
+}
 
 /*Hero search styling*/
 .hero-search {
@@ -256,4 +262,13 @@ body {
   border: none;
   width: 15rem;
   font-size: 1.6rem;
+}
+
+/*About page*/
+
+.about-main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
