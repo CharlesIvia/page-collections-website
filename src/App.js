@@ -12,9 +12,10 @@ import { NonFiction } from "./components/NonFiction";
 import { Novels } from "./components/Novels";
 import { Biographies } from "./components/Biographies";
 import { Textbooks } from "./components/Textbooks";
-import { PromisedLand } from "./components/PromisedLand";
-import { Drunk } from "./components/booklinks/Drunk";
+import { Book } from "./components/Book";
 import { Login } from "./components/Login";
+import { HomeDashboard } from "./components/HomeDashboard";
+import { AuthenticatedAbout } from "./components/AuthenticatedAbout";
 
 //Handling routing
 function App() {
@@ -56,12 +57,16 @@ function App() {
             <Route exact path="/textbooks">
               <Textbooks />
             </Route>
-            <Route exact path="/promised-land">
-              <PromisedLand />
+
+            <Route exact path="/home-dashboard">
+              <HomeDashboard />
             </Route>
-            <Route exact path="/drunk">
-              <Drunk />
+
+            <Route exact path="/my-about">
+              <AuthenticatedAbout />
             </Route>
+
+            <Route path="/book/:id" children={<Book />}></Route>
           </Switch>
         </div>
       </HashRouter>
