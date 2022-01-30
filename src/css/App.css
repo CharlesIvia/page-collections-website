@@ -43,6 +43,11 @@ body {
 }
 
 /*Hero search styling*/
+
+.hero {
+  display: flex;
+  flex-direction: column;
+}
 .hero-search {
   display: flex;
   flex-direction: row;
@@ -82,6 +87,13 @@ body {
   color: #babec4;
 }
 
+.search-results {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 4vh 15vw;
+  background-color: #f5f5ef;
+}
 /*Categories section*/
 .categories-section {
   background-color: #f5f5ef;
