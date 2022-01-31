@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Categories } from "./Categories";
 import { Footer } from "./Footer";
 import { Header } from "./Header";
@@ -7,15 +7,22 @@ import { PopularSection } from "./PopularSection";
 import EndlessReading from "../assets/bookshelf_.png";
 
 export const Home = () => {
+  const exploreRef = useRef();
+  let executeExploreScroll = () => {
+    exploreRef.current.scrollIntoView();
+  };
+
   return (
     <div>
-      <Header />
+      <Header exploreRefProp={executeExploreScroll} />
       <HeroSearch
         searchmain="Once you learn to read, you will be forever free."
         searchimage={EndlessReading}
       />
       <Categories />
-      <PopularSection />
+      <div ref={exploreRef}>
+        <PopularSection />
+      </div>
       <Footer />
     </div>
   );

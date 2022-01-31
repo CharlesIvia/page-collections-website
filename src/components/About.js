@@ -1,6 +1,6 @@
 //Required components
 import React from "react";
-import { Header } from "./Header";
+import { HeaderTwo } from "./HeaderTwo";
 import { Footer } from "./Footer";
 import ReadingWomanImg from "../assets/reading woman.gif";
 
@@ -17,7 +17,7 @@ export const AboutMain = () => {
 export const About = () => {
   return (
     <div>
-      <Header />
+      <HeaderTwo />
       <AboutMain />
       <Footer />
     </div>

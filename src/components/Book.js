@@ -2,7 +2,7 @@
 import React from "react";
 import { Books } from "../data/BooksData";
 import { Footer } from "./Footer";
-import { Header } from "./Header";
+import { HeaderTwo } from "./HeaderTwo";
 import { BookPage } from "./PromisedLand";
 import { useParams } from "react-router-dom";
 
@@ -14,7 +14,7 @@ export const Book = () => {
 
   return (
     <div>
-      <Header />
+      <HeaderTwo />
       {book ? (
         <BookPage book={book} key={book.id} />
       ) : (

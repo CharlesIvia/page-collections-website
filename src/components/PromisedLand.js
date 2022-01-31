@@ -1,5 +1,5 @@
 //Required components
-import React from "react";
+import React, { useState } from "react";
 import { Footer } from "./Footer";
 import { Header } from "./Header";
 import { Books } from "../data/BooksData";
@@ -7,11 +7,17 @@ import { Books } from "../data/BooksData";
 //Bookpage components
 
 export const BookPage = ({ book }) => {
+  const [clicked, setClicked] = useState(false);
+
   return (
     <div className="bookpage">
       <div className="bookpage-left">
         <img src={book.src} alt={book.name} />
-        <button>Buy Now</button>
+        <a href="tel:0111854222">
+          <button onClick={() => setClicked(!clicked)} className="call">
+            {clicked ? "0111-384-222" : "Call to buy"}
+          </button>
+        </a>
       </div>
       <div>
         <h3>

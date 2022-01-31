@@ -11,7 +11,7 @@ export const BuyNow = () => {
   );
 };
 
-export const Header = ({ exploreRefProp }) => {
+export const HeaderTwo = ({ exploreRefProp }) => {
   return (
     <div className="header">
       <div className="logo">
@@ -21,15 +21,9 @@ export const Header = ({ exploreRefProp }) => {
       </div>
       <div className="nav-links">
         <Link to="/about">About</Link>
-        {/* <Link to="/shopping-cart">
-          <HiOutlineShoppingBag size={32} />
-        </Link> */}
-        {/* <Link to="/register">
-          <button>Register</button>
-        </Link> */}
-        <div>
-          <button onClick={exploreRefProp}>Explore</button>
-        </div>
+        <Link to="/">
+          <button>Popular</button>
+        </Link>
       </div>
     </div>
   );

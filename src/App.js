@@ -16,6 +16,7 @@ import { Book } from "./components/Book";
 import { Login } from "./components/Login";
 import { HomeDashboard } from "./components/HomeDashboard";
 import { AuthenticatedAbout } from "./components/AuthenticatedAbout";
+import ScrollToTop from "./components/ScrollToTop";
 
 //Handling routing
 function App() {
@@ -23,6 +24,8 @@ function App() {
     <div className="App">
       <HashRouter>
         <div className="App">
+          <ScrollToTop />
+
           <Switch>
             <Route exact path="/">
               <Home />

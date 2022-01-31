@@ -1,5 +1,9 @@
 /*Initial styling*/
 @import url("https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Oxygen:wght@300;400;700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
 *,
 body {
   font-family: "Oxygen", sans-serif;
@@ -40,6 +44,16 @@ body {
   padding-left: 4vw;
   text-decoration: none;
   color: #3e3734;
+}
+
+.nav-links div {
+  padding-left: 4vw;
+}
+.nav-links div button {
+  padding: 0.8rem 2rem;
+  border-radius: 2.2rem;
+  border: 1px solid #3e3734;
+  font-size: 1.6rem;
 }
 
 /*Hero search styling*/
