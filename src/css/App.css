@@ -140,6 +140,7 @@ body {
   margin-bottom: 2vh;
   text-decoration: none;
   color: #3e3734;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .category-card div p {
@@ -180,6 +181,7 @@ body {
   margin-right: 2vw;
   text-decoration: none;
   color: #424f5a;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .bookcard div img {
