@@ -2,6 +2,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../assets/logo.png";
+import LogoTwo from "../assets/page-logo.PNG";
 
 export const BuyNow = () => {
   return (
@@ -16,7 +17,7 @@ export const Header = ({ exploreRefProp }) => {
     <div className="header">
       <div className="logo">
         <Link to="/">
-          <img src={Logo} alt="book store" />
+          <img src={LogoTwo} alt="book store" />
         </Link>
       </div>
       <div className="nav-links">

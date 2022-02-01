@@ -56,6 +56,10 @@ body {
   font-size: 1.6rem;
 }
 
+.logo a img {
+  height: 6rem;
+  width: 17rem;
+}
 /*Hero search styling*/
 
 .hero {
@@ -105,6 +109,8 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
   padding: 4vh 15vw;
   background-color: #f5f5ef;
 }
@@ -297,4 +303,133 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+}
+
+/*Responsive styling*/
+@media only screen and (max-width: 768px) {
+  .header {
+    padding: 1vh 2vw;
+    padding-left: 0;
+  }
+
+  .logo a img {
+    height: 5rem;
+    width: 15rem;
+  }
+
+  .nav-links div button {
+    margin-left: 7vw;
+  }
+
+  .hero-search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-image: url("../assets/bookshelf_.png"); */
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 1vh 2vw;
+  }
+
+  .hero-search-right {
+    display: none;
+  }
+
+  .hero-search-left {
+    padding: 1vh 2vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-search-left div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-search-left div form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-search-left div h2 {
+    font-size: 3.7rem;
+    color: #364250;
+    max-width: 85vw;
+    line-height: 4.7rem;
+    text-align: center;
+    margin-right: 0;
+    padding: 0;
+  }
+
+  .hero-search-left div form input {
+    padding: 0.8rem;
+    border-radius: 1.8rem;
+    width: 80vw;
+    font-size: 1.6rem;
+    border: none;
+    margin-bottom: 2vh;
+  }
+
+  .hero-search-left div form button {
+    width: 35vw;
+  }
+
+  /*Categories section */
+
+  .categories-section {
+    padding: 0;
+  }
+
+  .categories-section div h3 {
+    padding: 0;
+    text-align: center;
+  }
+
+  .categories {
+    padding: 1vh 2vw;
+  }
+
+  .popular-section-cards {
+    padding: 1vh 2vw;
+  }
+
+  .popular-section div h3 {
+    text-align: center;
+  }
+
+  .bookcard div img {
+    width: 15rem;
+    height: 20rem;
+  }
+
+  .search-results {
+    padding: 2vh 3vw;
+  }
+
+  /*Bookpage styling */
+
+  .bookpage {
+    flex-direction: column;
+    padding: 2vh 7vw;
+  }
+
+  .bookpage div img {
+    margin-right: 0;
+  }
+
+  .about-main {
+    padding: 4vh 0;
+  }
+
+  .about-main div img {
+    height: 40rem;
+    width: 40rem;
+  }
 }
