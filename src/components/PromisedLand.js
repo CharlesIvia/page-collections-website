@@ -15,7 +15,7 @@ export const BookPage = ({ book }) => {
         <img src={book.src} alt={book.name} />
         <a href="tel:0111854222">
           <button onClick={() => setClicked(!clicked)} className="call">
-            {clicked ? "0111-384-222" : "Call to buy"}
+            {clicked ? "0111-384-222" : "Call/Text to buy"}
           </button>
         </a>
       </div>

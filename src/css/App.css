@@ -175,7 +175,7 @@ body {
   flex-direction: column;
   align-items: left;
   background-color: white;
-  border-radius: 0rem 0rem 0.7rem 0.7rem;
+  border-radius: 0.7rem 0.7rem 0.7rem 0.7rem;
   margin-bottom: 2vh;
   max-width: 19rem;
   margin-right: 2vw;
@@ -294,8 +294,8 @@ body {
   padding: 1rem;
   color: white;
   border: none;
-  width: 15rem;
-  font-size: 1.6rem;
+  width: 17rem;
+  font-size: 1.4rem;
 }
 
 /*About page*/
@@ -433,5 +433,12 @@ body {
   .about-main div img {
     height: 40rem;
     width: 40rem;
+  }
+
+  .bookcard-details h3 {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    text-align: left;
   }
 }

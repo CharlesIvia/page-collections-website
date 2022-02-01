@@ -8,13 +8,13 @@ export const Footer = () => {
   return (
     <div className="footer">
       <div className="footer-social">
-        <a href="https://www.pagecollections.co.ke">
+        <a href="https://www.instagram.com/pagecollectionke/">
           <RiFacebookCircleLine size={37} color="#424f5a" />
         </a>
-        <a href="https://www.pagecollections.co.ke">
+        <a href="https://www.instagram.com/pagecollectionke/">
           <BsInstagram size={30} color="#424f5a" />
         </a>
-        <a href="https://www.pagecollections.co.ke">
+        <a href="https://twitter.com/mzigopoint">
           <FiTwitter size={30} color="#424f5a" />
         </a>
       </div>
