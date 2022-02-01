@@ -6,13 +6,9 @@ export const HeroSearch = ({ searchmain, searchimage }) => {
   const [query, setQuery] = useState("");
   const [bK, setBk] = useState([]);
   const [message, setMessage] = useState("");
-
-  let bufferBk = {
-    name: "Book not found",
-  };
   const handleOnChange = (e) => {
     let value = e.target.value;
-    setQuery(value);
+    setQuery(value.toLowerCase());
   };
 
   const SearchBook = (searchQuery) => {
@@ -42,7 +38,7 @@ export const HeroSearch = ({ searchmain, searchimage }) => {
             <form onSubmit={SearchBook}>
               <input
                 type="text"
-                placeholder="Search a book, an author or genre"
+                placeholder="Search a book or an author"
                 onChange={handleOnChange}
               ></input>
               <button type="submit">Search</button>
