@@ -8,22 +8,22 @@ export const HeroSearch = ({ searchmain, searchimage }) => {
   const [message, setMessage] = useState("");
   const handleOnChange = (e) => {
     let value = e.target.value;
-    setQuery(value.toLowerCase());
+    setQuery(value.toLowerCase().replace(/\s+/g, ""));
   };
 
-  const SearchBook = (searchQuery) => {
-    setQuery(searchQuery);
+  const SearchBook = (e) => {
+    e.preventDefault();
     let searchedBk = Books.filter(
       (bk) =>
-        bk.name.toLowerCase().includes(query) ||
-        bk.author.toLowerCase().includes(query)
+        bk.name.toLowerCase().replace(/\s+/g, "").includes(query) ||
+        bk.author.toLowerCase().replace(/\s+/g, "").includes(query)
     );
 
     // console.log(searchedBk);
     // console.log(query);
     searchedBk.length > 0
       ? setBk([...searchedBk])
-      : setBk([]) &&
+      : setBk([]) ||
         setMessage("Sorry! We do not that book on our catalogue yet.");
   };
 
