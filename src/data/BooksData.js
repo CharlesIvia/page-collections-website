@@ -14,6 +14,9 @@ import SapiensImg from "../assets/books/sapiens.jpg";
 import YellowSunImg from "../assets/books/yellow sun.jpg";
 import ShouldIImg from "../assets/books/should-i.jpeg";
 import BecomingImg from "../assets/books/becoming.jpg";
+import KeysImg from "../assets/books/keys-to-sucess.jpg";
+import GiveAFuckImg from "../assets/books/give-a-fuck.jpg";
+import SmartMoneyImg from "../assets/books/smart-money-woman.jpg";
 
 export const Books = [
   {
@@ -171,5 +174,39 @@ export const Books = [
     popular: false,
     price: 800,
     id: 12,
+  },
+
+  {
+    name: "Keys to Success",
+    author: "Napoleon Hill",
+    category: "personalgrowth",
+    description:
+      "Napoleon Hill summed up his philosophy of success in Think and Grow Rich!, one of the bestselling inspirational business books ever. A recent USA Today survey of business leaders named it one of the five most influential books in its field, more than 40 years after it was first published. Now, in Napoleon Hill's Keys to Success, his broadly outlined principles are expanded in detail for the first time, with concrete advice on their use and implementation. ",
+    src: KeysImg,
+    popular: true,
+    price: 700,
+    id: 13,
+  },
+  {
+    name: "The Subtle Art of Not Giving a F*ck",
+    author: "Mark Manson",
+    category: "personalgrowth",
+    description:
+      "Manson makes the argument, backed both by academic research and well-timed poop jokes, that improving our lives hinges not on our ability to turn lemons into lemonade, but on learning to stomach lemons better. Human beings are flawed and limited—not everybody can be extraordinary, there are winners and losers in society, and some of it is not fair or your fault. Manson advises us to get to know our limitations and accept them. Once we embrace our fears, faults, and uncertainties, once we stop running and avoiding and start confronting painful truths, we can begin to find the courage, perseverance, honesty, responsibility, curiosity, and forgiveness we seek.",
+    popular: true,
+    price: 700,
+    id: 14,
+    src: GiveAFuckImg,
+  },
+  {
+    name: " The Smart Money Woman",
+    author: "Arese Ugwu",
+    category: "personalgrowth",
+    description:
+      "This book tackles, debt, spending, the consumerist culture of the African middle class, the fear and misconceptions surrounding money and the lack of it, love, friendships, cultural and societal pressures and the roles they play in success. With each chapter comes a Smart Money Lesson, there to help you work your way up the financial ladder",
+    price: 700,
+    id: 15,
+    popular: true,
+    src: SmartMoneyImg,
   },
 ];
